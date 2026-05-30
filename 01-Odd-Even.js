@@ -1,10 +1,14 @@
 console.log("Odd/Even")
-let isOddOrEven = 25
-if(isOddOrEven%2 === 0)
+let num = 25
+function isOddOrEven(num)
 {
-console.log(`${isOddOrEven} is an Even number`)
+if(num%2 === 0)
+{
+console.log(`${num} is an Even number`)
 }
 else
 {
-    console.log(`${isOddOrEven} is a Odd number`)
+    console.log(`${num} is a Odd number`)
 }
+}
+isOddOrEven(25)
