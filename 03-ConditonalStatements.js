@@ -1,35 +1,44 @@
 console.log("if-else Conditional Statement")
-let launchBrowser= "Chrome"
-if(launchBrowser === "Chrome")
+let browserName = "Chrome"
+function launchBrowser(browserName)
 {
-    console.log(`${launchBrowser} browser`)
-}else if (launchBrowser === "MSEdge")
+if(browserName === "Chrome")
 {
-    console.log(`${launchBrowser} browser`)
+    console.log(`${browserName} browser`)
+}else if (browserName === "MSEdge")
+{
+    console.log(`${browserName} browser`)
 }else
 {
     console.log("Invalid browser name")
 }
+}
+launchBrowser(browserName)
+
 
 //----------------------------------------------
 
 console.log("Switchcase Conditional Statement")
-let runtest= "sanity"
-switch(runtest)
+let testType= "sanity"
+function runtest(testType)
+{
+switch(testType)
 {
     case "sanity":
-        console.log(`Perform ${runtest} testing`)
+        console.log(`Perform ${testType} testing`)
     break;
 
     case "smoke":
-        console.log(`Perform ${runtest} testing`)
+        console.log(`Perform ${testType} testing`)
     break;
 
     case "regression":
-        console.log(`Perform ${runtest} testing`)
+        console.log(`Perform ${testType} testing`)
     break;
 
     default:
         console.log ("Perform sanity testing")
     break;
 }
+}
+runtest(testType)
